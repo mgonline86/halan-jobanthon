@@ -43,7 +43,7 @@ export default function Table({data, printBtn}:Props) {
         </div>
       }
       <div className='row'>
-        <table className="table table-dark table-striped" id="table2PDF">
+        <table className="table table-dark table-striped" id="table2PDF" data-testid="table2PDF">
           <thead>
             <tr>
               <th scope="col">#</th>

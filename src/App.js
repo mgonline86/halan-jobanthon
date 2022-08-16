@@ -1,17 +1,14 @@
-// import logo from './logo.svg';
+import logo from './logo.svg';
 import './App.css';
 import Table from "./components/Table";
 import data from "./data.json";
 
 
 function App() {
-
-
-
   return (
     <div className="container">
-      <div className='row'>
-        <h1 className='text-center'>HALAN APP</h1>
+      <div className='row justify-content-center'>
+        <img src={logo} className="App-logo" alt="logo" />
       </div>
       <Table data={data} printBtn={true}/>
     </div>
