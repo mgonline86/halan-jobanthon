@@ -5,7 +5,7 @@ export default function Table(props) {
   const headers = Object.keys(customers[0]);
   return (
     <div className='row'>
-      <table className="table table-dark table-striped">
+      <table className="table table-dark table-striped" id="table2PDF">
         <thead>
           <tr>
             <th scope="col">#</th>
@@ -23,10 +23,10 @@ export default function Table(props) {
                 {
                   headers.map(header => {
                     if(header === "date"){
-                      return(<td>{ new Date(customer[header]).toDateString() }</td>)
+                      return(<td key={header+i}>{ new Date(customer[header]).toDateString() }</td>)
                     }
                     else{
-                      return(<td>{ customer[header] }</td>)
+                      return(<td key={header+i}>{ customer[header] }</td>)
                     }
                   })
                 }
